@@ -13,6 +13,10 @@ class ApplicationController < Sinatra::Base
     categories.to_json
   end
   
+  post "/categories" do
+    category = Category.create(params)
+    category.to_json
+  end
 
   post "/todos" do
     #todo = Todo.create(params)

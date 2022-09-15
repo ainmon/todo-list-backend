@@ -3,7 +3,6 @@ class TodoController < ApplicationController
 
     # GET /todos
 
-
     def index
         @todos = Todo.all
         todos.to_json

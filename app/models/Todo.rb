@@ -4,7 +4,7 @@ class Todo < ActiveRecord::Base
 
 
     def category
-        Category.find(self.task_id)
+        Category.find(self.category_id)
     end
     
     

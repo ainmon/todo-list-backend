@@ -7,7 +7,6 @@ class Category < ActiveRecord::Base
         #self is the instance of category
         #Category.first.todo will find first todo
         Todo.find(self.task_id)
-
     end
 
 end
